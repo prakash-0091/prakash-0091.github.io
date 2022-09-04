@@ -1,0 +1,191 @@
+:root {
+    --backgroundColor: rgba(0, 0, 0, 0.821);
+    --borderColor: rgba(179, 238, 253, 0.825);
+    --hoverBorderColor: rgb(179, 238, 253);
+}
+
+body {
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.heading {
+    padding: 40px;
+}
+
+.heading>h1 {
+
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+
+    text-shadow: 0 0 10px white;
+
+}
+
+
+
+.flex-box {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+h2 {
+    padding: 2%;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.card-wrapper {
+    border: 2px solid var(--borderColor);
+    height: 400px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.card-wrapper:hover {
+    border-color: var(--hoverBorderColor);
+    box-shadow: 0 0 6px 2px white;
+}
+
+.top-design {
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 130px;
+    border: 12px solid;
+    border-color: var(--borderColor) transparent transparent transparent;
+}
+
+.upper-tri {
+    position: absolute;
+    top: 6%;
+    right: 18px;
+    border: 40px solid;
+    border-color: var(--backgroundColor) var(--backgroundColor) transparent transparent;
+}
+
+.lower-tri {
+    position: absolute;
+    top: calc(6% + 160px - 76px);
+    left: 18px;
+    border: 40px solid;
+    border-color: transparent transparent var(--backgroundColor) var(--backgroundColor);
+}
+
+
+
+.card-img {
+    position: absolute;
+    height: 160px;
+    width: 260px;
+    top: 6%;
+    border: 2px solid var(--borderColor);
+
+}
+
+
+
+.card-img>img {
+    height: 160px;
+    width: 260px;
+    object-fit: cover;
+
+}
+
+
+.card-body {
+    position: relative;
+    height: 100px;
+    width: 260px;
+    padding-left: 6px;
+    top: 48%;
+    border: 7px solid;
+    border-color: transparent transparent transparent var(--borderColor);
+}
+
+.desc {
+    color: var(--borderColor);
+    font-size: 12px;
+}
+
+.footer-line {
+    position: absolute;
+    bottom: 15%;
+    right: 10px;
+    height: 1px;
+    width: 250px;
+    background-color: var(--borderColor);
+}
+
+
+.lower-left-bottom {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border: 40px solid;
+    border-color: transparent transparent var(--borderColor) var(--borderColor);
+
+
+}
+
+.lower-right-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--borderColor);
+    text-align: end;
+    line-height: 20px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 1611px) {
+
+    .flex-box {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 708px) {
+    .heading>h1 {
+
+        font-size: 30px;
+
+
+    }
+
+    .flex-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 434px) {
+
+    .heading {
+        padding: 5px;
+    }
+
+    .heading>h1 {
+
+        font-size: 14.5px;
+
+
+    }
+}
