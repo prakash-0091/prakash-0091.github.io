@@ -43,6 +43,7 @@ h2{
 }
 
 
+
 .main-card {
     position: relative;
     border: 2px solid var(--borderColor);
@@ -207,4 +208,51 @@ h2{
 a{
     color: var(--borderColor);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1625px) {
+
+    .main-card{
+        width: 300px;
+        height: 450px;
+        
+    }
+
+    .main-card-top-design{
+        width: 150px;
+    }
+
+    .outer-rect{
+        left: 10px;
+        width: 270px;
+        height: 200px;
+
+    }
+
+    .outer-rect>img{
+        height: 200px;
+        width: 270px;
+    }
+
+    .tri-common{
+        border-width: 40px;
+    }
+
+    .vert-line-desc{
+        left: 2%;
+        top: 60%;
+    }
+
+    .desc{
+        left: 5%;
+        top: 60%;
+        font-size: 15px;
+    }
+
+    .footer{
+        width: 300px;
+    }
+
+  
+
 }
